@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka',
+        sans-serif;
+}
+
+
+
+/* HEADER */
+.titulo {
+    color: rgb(252, 242, 242);
+}
+
+.nav {
+    justify-content: flex-end;
+}
+
+
+/*  MAIN INDEX */
+
+.main__title,
+.aside__title {
+    margin-top: 4rem;
+    text-align: center;
+    color: rgb(252, 242, 242);
+
+    font-family: 'Nunito',
+        sans-serif;
+
+}
+
+.card {
+    box-shadow: 0 .5rem 1rem #f5f4f4b0;
+}
+
+
+.card__list {
+    list-style: none;
+    padding: 0;
+}
+
+.card__title--simple {
+    text-decoration: none;
+}
+
+/* ASIDE */
+.aside__container {
+    justify-content: space-evenly;
+}
+
+/* CATALOGO */
+
+.producto_texto {
+    font-size: 0.7rem;
+}
+
+.vacio {
+    height: 50vh;
+}
+
+/* CATALOGO */
+
+
+.btn-shadow {
+    margin-left: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.btn-shadow:hover {
+    box-shadow: 0 .2rem 0.5rem #f5f4f4b0;
+
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+}
+
+/* NOSOTROS MAIN */
+
+.nos p {
+    color: rgb(252, 242, 242);
+}
+
+.nos__animated {
+    font-family: "Montserrat";
+    text-align: center;
+    color: #FFF;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    /* height: 100vh; */
+    letter-spacing: 1px;
+}
+
+.nos__animated h1 {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: .75;
+    margin: 10px 0;
+}
+
+.nosotros {
+    max-width: 25%;
+    border-radius: 50%;
+}
+
+/* CONTACTO */
+.contacto {
+    display: grid;
+    color: #ffffff;
+    grid-template-areas: "form contacto ubicacion";
+}
+
+.form__container {
+    grid-area: form;
+}
+
+.contacto__info {
+    grid-area: contacto;
+}
+
+.ubicacion {
+    grid-area: ubicacion;
+}
+
+.form__container,
+.contacto__info,
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+    min-width: 15rem;
+    width: 100%;
+    height: 30rem;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.form__title {
+    display: flex;
+    align-self: center;
+    margin: 5px;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 500;
+
+}
+
+form {
+    /* Centrar el formulario en la página */
+
+    align-self: center;
+    margin: 0;
+    width: 350px;
+    /* Esquema del formulario */
+    padding: 1em;
+    background-color: inherit;
+    border: 2px solid #faf7f6;
+    border-radius: 1em;
+    box-shadow: 0 .2rem 0.5rem #f5f4f4b0;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li {
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+}
+
+input {
+    font-size: 1em;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form__btn {
+    font-size: 1.2em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(255, 193, 7);
+    color: #020202fb;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.16),
+        1px 5px 15px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.contacto__info--title {
+    color: #ffffff;
+    display: flex;
+    align-self: center;
+    margin: 15px;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.contacto__info--p {
+    color: #ffffff;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.ubicacion__title {
+    display: flex;
+    align-self: center;
+    margin: 1rem;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.maps {
+    margin: 0 auto;
+    max-width: 26rem;
+    max-height: 20rem;
+}
+
+.maps iframe {
+    width: 100%;
+}
+
+/* fin main contacto */
+
+/* FOOTER */
+.footer__item {
+    text-decoration: none;
+    color: rgb(252, 242, 242);
+}
+
+@media screen and (max-width:480px) {
+    .aside__container {
+        justify-content: center;
+    }
+
+    .aside__card {
+        margin: 3rem;
+    }
+
+    .contacto {
+        grid-template-areas: "form"
+            "contacto"
+            "ubicacion";
+        gap: 0.5rem;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width:768px) {
+    .aside__container {
+        justify-content: center;
+    }
+
+    .aside__card {
+        margin: 3rem;
+    }
+
+    .contacto {
+        grid-template-areas: "form"
+            "contacto"
+            "ubicacion";
+        gap: 0.5rem;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .contacto {
+        grid-template-areas: "form contacto"
+            "ubicacion ubicacion";
+        gap: 0.5rem;
+    }
+
+}
